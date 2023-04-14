@@ -12,3 +12,14 @@ export interface IProduct {
 export interface ITitle {
   name: string;
 }
+
+export interface IButton {
+  name: string;
+}
+
+export interface ICardBlog {
+  url: string;
+  date: string;
+  title: string;
+  id: number;
+}
