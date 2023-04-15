@@ -4,8 +4,17 @@ import { Input } from "../../Global/Input";
 import { TbUserCircle } from "react-icons/tb";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
+import { useState } from "react";
+import { Sidebar } from "../../SideBar";
+import { AnimatePresence } from "framer-motion";
 
 export const HeaderStyles = () => {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => {
+    setSidebar(!sidebar);
+  };
+
   return (
     <Container>
       <img src={logo} alt="brand" />
@@ -25,10 +34,13 @@ export const HeaderStyles = () => {
         <button>
           <AiOutlineStar />
         </button>
-        <button>
+        <button onClick={showSidebar}>
           <BsCart2 />
         </button>
       </DivButtons>
+      <AnimatePresence>
+        {sidebar && <Sidebar active={setSidebar} />}
+      </AnimatePresence>
     </Container>
   );
 };
