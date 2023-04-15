@@ -73,6 +73,7 @@ export const BoxButtons = styled.div`
     color: var(--gray1);
     cursor: pointer;
     margin-bottom: 10px;
+    transition: 0.4s;
   }
 
   svg:hover {

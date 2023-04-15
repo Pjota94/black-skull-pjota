@@ -19,7 +19,7 @@ export const BoxInfos = styled.div`
   flex-direction: column;
   gap: 14px;
 
-  span {
+  a {
     font-family: "Barlow";
     font-style: normal;
     font-weight: 400;

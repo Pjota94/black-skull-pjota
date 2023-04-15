@@ -50,6 +50,7 @@ export const Main = styled.main`
     height: 48px;
     border-radius: 4px;
     margin-left: 155px;
+    transition: 0.4s;
   }
 
   button:hover {

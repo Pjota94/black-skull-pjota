@@ -14,6 +14,7 @@ export const ButtonStyle = styled.button`
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  transition: 0.4s;
 
   &&:hover {
     background: var(--orange2);

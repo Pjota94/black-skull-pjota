@@ -31,7 +31,7 @@ export const BoxText = styled.div`
 export const BoxVector = styled.div`
   img {
     margin-top: 85px;
-    transition: 1s;
+    transition: 0.5s;
   }
 
   img:hover {

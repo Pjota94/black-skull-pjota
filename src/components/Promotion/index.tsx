@@ -10,13 +10,18 @@ import Slider from "react-slick";
 export const Promotion = () => {
   const slider = useRef<any>(null);
 
+  //TODO: Componentizar slick
+
   const settings = {
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 200,
     arrows: false,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
   };
 
   return (

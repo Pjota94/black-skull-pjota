@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  h5 {
+  a {
     color: var(--orange1);
     font-family: "Barlow";
     font-style: normal;

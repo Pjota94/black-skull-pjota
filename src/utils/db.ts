@@ -75,31 +75,6 @@ export const products = [
     price: "349,90",
     id: 5,
   },
-  {
-    name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
-    id: 6,
-  },
-  {
-    name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
-    id: 7,
-  },
-  {
-    name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
-    id: 8,
-  },
-  {
-    name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
-    id: 9,
-  },
-  {
-    name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
-    id: 10,
-  },
 ];
 
 export const team = [

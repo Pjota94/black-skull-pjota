@@ -27,6 +27,7 @@ export const Ul = styled.ul`
     width: 32px;
     height: 32px;
     left: -15px;
+    transition: 0.4s;
   }
 
   .prev:hover {
@@ -43,6 +44,7 @@ export const Ul = styled.ul`
     border-radius: 4px;
     width: 32px;
     height: 32px;
+    transition: 0.4s;
   }
 
   .next:hover {
@@ -61,10 +63,25 @@ export const Ul = styled.ul`
     content: "";
   }
 
-  .slick-dots li button:before {
+  .slick-dots li.slick-active button:before {
     display: block;
     background: var(--orange1);
     width: 40px;
     height: 6px;
+  }
+
+  .slick-dots li button::before {
+    background: var(--gray2);
+    width: 40px;
+    height: 2px;
+    opacity: 1;
+  }
+
+  .slick-dots li.slick-active button {
+    height: 20px;
+  }
+
+  .slick-dots li button {
+    height: 11px;
   }
 `;

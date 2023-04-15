@@ -52,6 +52,7 @@ export const Ul = styled.ul`
     width: 32px;
     height: 32px;
     left: -15px;
+    transition: 0.4s;
   }
 
   .prev:hover {
@@ -68,6 +69,7 @@ export const Ul = styled.ul`
     border-radius: 4px;
     width: 32px;
     height: 32px;
+    transition: 0.4s;
   }
 
   .next:hover {

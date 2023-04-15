@@ -16,7 +16,7 @@ export const Container = styled.div`
 
   input {
     margin-left: 16px;
-    margin-right: 15px;
+    margin-right: 10px;
     background-color: transparent;
     border: none;
     color: var(--gray1);

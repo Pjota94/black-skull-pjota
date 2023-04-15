@@ -48,6 +48,7 @@ export const DivButtons = styled.div`
   svg {
     font-size: 24px;
     color: var(--gray1);
+    transition: 0.4s;
   }
 
   svg:hover {
