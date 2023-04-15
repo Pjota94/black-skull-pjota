@@ -14,7 +14,11 @@ export default createGlobalStyle`
     cursor: pointer;
   }
   
-  ul ol li{
+  ul ol {
+    list-style: none;
+  }
+
+  li{
     list-style: none;
   }
 

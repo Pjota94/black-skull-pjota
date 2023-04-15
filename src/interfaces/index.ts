@@ -23,3 +23,15 @@ export interface ICardBlog {
   title: string;
   id: number;
 }
+
+export interface ICardObjective {
+  objective: string;
+  image: string;
+}
+
+export interface ICardHighlight {
+  title: string;
+  image: string;
+  buttonName: string;
+  spanName: string;
+}
