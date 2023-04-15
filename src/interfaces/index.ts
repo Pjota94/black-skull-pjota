@@ -35,3 +35,13 @@ export interface ICardHighlight {
   buttonName: string;
   spanName: string;
 }
+
+export interface IInfosFooter {
+  description: string;
+  id: number;
+}
+
+export interface IInfosTitle {
+  title: string;
+  array: IInfosFooter[];
+}

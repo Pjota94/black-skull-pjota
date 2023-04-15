@@ -1,6 +1,7 @@
 import { About } from "./components/About";
 import { Blog } from "./components/Blog";
 import { Cover } from "./components/Cover";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Highlights } from "./components/Highlights";
 import { ListSuplement } from "./components/ListSuplement";
@@ -24,6 +25,7 @@ function App() {
       <Objectives />
       <Highlights />
       <About />
+      <Footer />
     </>
   );
 }
