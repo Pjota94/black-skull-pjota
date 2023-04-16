@@ -46,7 +46,7 @@ export const Sidebar = ({ active, sidebar }: any) => {
         <BoxProductEmpty>
           <IoIosCloseCircleOutline />
           <h3>SEU CARRINHO ESTÁ VAZIO</h3>
-          <button>CONTINUAR COMPRANDO</button>
+          <button onClick={() => active(false)}>CONTINUAR COMPRANDO</button>
         </BoxProductEmpty>
       </Container>
     </ContainerModal>
