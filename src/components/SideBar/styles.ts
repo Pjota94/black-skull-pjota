@@ -13,7 +13,7 @@ export const ContainerModal = styled.div`
 export const Container = styled.div`
   background: var(--white);
   position: fixed;
-  height: 668px;
+  height: 100%;
   right: 0;
   top: 0;
   width: 400px;
@@ -60,7 +60,7 @@ export const BoxProductEmpty = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  height: 409px;
+  height: 539px;
   justify-content: center;
 
   > h3 {
@@ -74,5 +74,23 @@ export const BoxProductEmpty = styled.div`
 
   > svg {
     font-size: 60px;
+  }
+
+  button {
+    border: none;
+    background: var(--gray2);
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 16px;
+    color: var(--black1);
+    height: 50px;
+    width: 308px;
+    transition: 0.4s;
+  }
+
+  button:hover {
+    background: var(--gray1);
   }
 `;

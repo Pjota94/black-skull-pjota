@@ -1,5 +1,5 @@
 import { Circle, Container } from "./styles";
-import img from "../../../assets/Images/protein.png";
+import img from "../../../assets/Images/protein.svg";
 import { ISuplement } from "../../../interfaces";
 
 export const Suplement = ({ id, name }: ISuplement) => {
