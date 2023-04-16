@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import cover from "../../assets/Images/Capa.png";
+import cover from "../../../dist/images/Capa.png";
 
 export const Main = styled.main`
   background-image: url(${cover});
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 548px; */
   min-height: 100vh;
   margin-top: 104px;
 
