@@ -55,3 +55,46 @@ export const DivButtons = styled.div`
     color: var(--white);
   }
 `;
+
+export const DivDropBox = styled.div`
+  &&:hover {
+    main {
+      display: flex;
+      border-top: 1px solid rgba(82, 76, 76, 0.4);
+    }
+
+    a {
+      background-color: var(--dark3);
+      color: var(--white);
+    }
+    a::after {
+      width: 100%;
+    }
+  }
+
+  > a {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray1);
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+    position: relative;
+  }
+
+  > a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: var(--orange1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+  }
+`;

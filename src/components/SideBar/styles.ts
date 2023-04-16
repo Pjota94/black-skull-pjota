@@ -40,6 +40,14 @@ export const BoxClose = styled.div`
     background: transparent;
   }
 
+  button > svg {
+    transition: 0.4s;
+  }
+
+  button > svg:hover {
+    color: var(--gray1);
+  }
+
   svg {
     font-size: 34px;
     margin-left: 20px;

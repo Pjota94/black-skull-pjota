@@ -1,15 +1,21 @@
-import { Container, DivButtons } from "./styles";
+import { Container, DivButtons, DivDropBox } from "./styles";
 import logo from "../../../assets/Logos/logo.svg";
 import { Input } from "../../Global/Input";
 import { TbUserCircle } from "react-icons/tb";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Sidebar } from "../../SideBar";
 import { AnimatePresence } from "framer-motion";
+import { AuthMainContext } from "../../../context/MainContext";
+import { ModalLogin } from "../../ModalLogin";
+import { DropBox } from "../../Global/DropBox";
+import { dropboxCategory, dropboxClothing } from "../../../utils/mocks";
 
 export const HeaderStyles = () => {
   const [sidebar, setSidebar] = useState(false);
+
+  const { isModal, setIsModal } = useContext(AuthMainContext);
 
   const showSidebar = () => {
     setSidebar(!sidebar);
@@ -19,8 +25,14 @@ export const HeaderStyles = () => {
     <Container>
       <img src={logo} alt="brand" />
       <nav>
-        <a href="">CATEGORIAS</a>
-        <a href="">VESTUÁRIOS</a>
+        <DivDropBox>
+          <a href="">CATEGORIAS</a>
+          <DropBox array={dropboxCategory} />
+        </DivDropBox>
+        <DivDropBox>
+          <a href="">VESTUÁRIOS</a>
+          <DropBox array={dropboxClothing} />
+        </DivDropBox>
         <a href="">OBJETIVOS</a>
         <a href="">PROMOÇÕES</a>
         <a href="">ATLETAS</a>
@@ -29,7 +41,7 @@ export const HeaderStyles = () => {
       <Input />
       <DivButtons>
         <button>
-          <TbUserCircle />
+          <TbUserCircle onClick={() => setIsModal(true)} />
         </button>
         <button>
           <AiOutlineStar />
@@ -40,6 +52,7 @@ export const HeaderStyles = () => {
       </DivButtons>
       <AnimatePresence>
         {sidebar && <Sidebar active={setSidebar} />}
+        {isModal && <ModalLogin />}
       </AnimatePresence>
     </Container>
   );

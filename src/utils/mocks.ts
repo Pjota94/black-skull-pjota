@@ -66,3 +66,65 @@ export const affiliated = [
     id: 5,
   },
 ];
+
+export const dropboxCategory = [
+  {
+    title: "Proteínas",
+    id: 1,
+  },
+  {
+    title: "Aminoácidos",
+    id: 2,
+  },
+  {
+    title: "Minerais",
+    id: 3,
+  },
+  {
+    title: "Vitaminas",
+    id: 4,
+  },
+  {
+    title: "Carboidratos",
+    id: 5,
+  },
+  {
+    title: "Hipercalóricos",
+    id: 6,
+  },
+];
+
+export const dropboxClothing = [
+  {
+    title: "Blusas",
+    id: 1,
+  },
+  {
+    title: "Calças",
+    id: 2,
+  },
+  {
+    title: "Camisetas",
+    id: 3,
+  },
+  {
+    title: "Chinelo",
+    id: 4,
+  },
+  {
+    title: "Jaquetas",
+    id: 5,
+  },
+  {
+    title: "Óculos",
+    id: 6,
+  },
+  {
+    title: "Regatas",
+    id: 7,
+  },
+  {
+    title: "Casacos",
+    id: 8,
+  },
+];

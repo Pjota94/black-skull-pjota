@@ -45,3 +45,12 @@ export interface IInfosTitle {
   title: string;
   array: IInfosFooter[];
 }
+
+export interface IDropBoxInfo {
+  title: string;
+  id: number;
+}
+
+export interface IDropBox {
+  array: IDropBoxInfo[];
+}
