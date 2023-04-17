@@ -11,7 +11,7 @@ O Objetivo desde projeto foi desenvolver um e-commerce seguindo um Figma propost
 ### Pré-requisitos
 
 Ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [VSCode](https://code.visualstudio.com/)
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [VSCode](https://code.visualstudio.com/), [Gulp](https://gulpjs.com/)
 
 ## 🖥️ Instalação e como rodar a aplicação
 
@@ -24,8 +24,10 @@ Ter instalado em sua máquina as seguintes ferramentas:
     $ code .
     # Instale as dependências
     $ npm install
+    # Execute a tarefa no gulp para comprimir as imagens do projeto
+    $ gulp imagemin
     # Execute o script start
-    $ npm dev
+    $ npm run dev
 ```
 
 ## 🖥️ Gulp Tasks
