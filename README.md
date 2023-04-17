@@ -1,6 +1,6 @@
 ## Resumo do Projeto
 
-    O Objetivo desde projeto foi desenvolver um e-commerce seguindo um Figma proposto, além de criar a aplicaçãp seguindo o Figma, adicionei novas features, como Modal para Login, Sidebar para Carrinho de compras feito com Redux Toolkit para gerenciar os estados do carrinho, e um Menu de navegação com um DropBox. Também adicionei o Slick no projeto para fazer o carrosel de imagens e produtos.
+O Objetivo desde projeto foi desenvolver um e-commerce seguindo um Figma proposto, além de criar a aplicaçãp seguindo o Figma, adicionei novas features, como Modal para Login, Sidebar para Carrinho de compras feito com Redux Toolkit para gerenciar os estados do carrinho, e um Menu de navegação com um DropBox. Também adicionei o Slick no projeto para fazer o carrosel de imagens e produtos.
 
 ## ⚙️ Features
 
@@ -51,6 +51,6 @@ Ter instalado em sua máquina as seguintes ferramentas:
 | [Styled-Components](https://styled-components.com/)         |
 | [Gulp](https://gulpjs.com/)                                 |
 
-## Criador
+## Link da Aplicação
 
-- [Paulo Júnior](https://www.linkedin.com/in/paulo-j%C3%BAnior-6673a5199/)
+- [Vercel](https://black-skull-pjota-pjota94.vercel.app/)
