@@ -50,6 +50,7 @@ Ter instalado em sua máquina as seguintes ferramentas:
 | [ReactIcons](https://react-icons.github.io/react-icons)     |
 | [Styled-Components](https://styled-components.com/)         |
 | [Gulp](https://gulpjs.com/)                                 |
+| [Vite](https://vitejs.dev/)                                 |
 
 ## Link da Aplicação
 
