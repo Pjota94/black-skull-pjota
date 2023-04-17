@@ -1,25 +1,28 @@
-import { Container, DivButtons, DivDropBox } from "./styles";
+import { CircleQuantity, Container, DivButtons, DivDropBox } from "./styles";
 import logo from "../../../assets/Logos/logo.svg";
 import { Input } from "../../Global/Input";
 import { TbUserCircle } from "react-icons/tb";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Sidebar } from "../../SideBar";
 import { AnimatePresence } from "framer-motion";
 import { AuthMainContext } from "../../../context/MainContext";
 import { ModalLogin } from "../../ModalLogin";
 import { DropBox } from "../../Global/DropBox";
 import { dropboxCategory, dropboxClothing } from "../../../utils/mocks";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../store";
 
 export const HeaderStyles = () => {
-  const [sidebar, setSidebar] = useState(false);
-
-  const { isModal, setIsModal } = useContext(AuthMainContext);
+  const { isModal, setIsModal, sidebar, setSidebar } =
+    useContext(AuthMainContext);
 
   const showSidebar = () => {
     setSidebar(!sidebar);
   };
+
+  const { amount } = useSelector((state: RootState) => state.product);
 
   return (
     <Container>
@@ -49,6 +52,9 @@ export const HeaderStyles = () => {
         <button onClick={showSidebar}>
           <BsCart2 />
         </button>
+        <CircleQuantity>
+          <span>{amount}</span>
+        </CircleQuantity>
       </DivButtons>
       <AnimatePresence>
         {sidebar && <Sidebar active={setSidebar} />}

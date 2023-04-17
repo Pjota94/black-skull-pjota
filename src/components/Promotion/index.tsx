@@ -42,6 +42,8 @@ export const Promotion = () => {
                 name={item.name}
                 id={item.id}
                 price={item.price}
+                image={item.image}
+                item={item}
               />
             ))}
           </Slider>

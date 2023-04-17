@@ -1,3 +1,4 @@
+import { useDispatch, useSelector } from "react-redux";
 import { About } from "./components/About";
 import { Blog } from "./components/Blog";
 import { Cover } from "./components/Cover";
@@ -10,8 +11,18 @@ import { Promotion } from "./components/Promotion";
 import { Releases } from "./components/Releases";
 import { Team } from "./components/Team";
 import Global from "./styles/global";
+import { RootState } from "./store";
+import { useEffect } from "react";
+import { totalValue } from "./features/productSlice";
 
 function App() {
+  const { currentSale } = useSelector((state: RootState) => state.product);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(totalValue());
+  }, [currentSale, dispatch]);
+
   return (
     <>
       <Global />

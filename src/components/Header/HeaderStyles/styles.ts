@@ -98,3 +98,27 @@ export const DivDropBox = styled.div`
     transition: 0.3s ease-in-out;
   }
 `;
+
+export const CircleQuantity = styled.div`
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  background-color: var(--orange1);
+  position: relative;
+  left: -25px;
+  top: -6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > span {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+  }
+`;

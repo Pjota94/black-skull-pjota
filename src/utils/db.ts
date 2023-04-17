@@ -49,31 +49,43 @@ export const supplement = [
   },
 ];
 
+import wheyZero from "../assets/Images/whey.svg";
+
 export const products = [
   {
     name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
+    price: 349.9,
     id: 1,
+    // amount: 1,
+    image: wheyZero,
   },
   {
     name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
+    price: 349.9,
     id: 2,
+    // amount: 1,
+    image: wheyZero,
   },
   {
     name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
+    price: 349.9,
     id: 3,
+    // amount: 1,
+    image: wheyZero,
   },
   {
     name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
+    price: 349.9,
     id: 4,
+    // amount: 1,
+    image: wheyZero,
   },
   {
     name: "Whey Zero (Com Lactase) Black Skull - 900G",
-    price: "349,90",
+    price: 349.9,
     id: 5,
+    // amount: 1,
+    image: wheyZero,
   },
 ];
 

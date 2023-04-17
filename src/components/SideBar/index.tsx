@@ -1,10 +1,21 @@
-import { useEffect, useRef } from "react";
-import { BoxClose, BoxProductEmpty, Container, ContainerModal } from "./styles";
+import { useContext, useEffect, useRef } from "react";
+import {
+  BoxClose,
+  BoxProduct,
+  BoxProductEmpty,
+  Container,
+  ContainerCart,
+  ContainerModal,
+} from "./styles";
 import { CgClose } from "react-icons/cg";
 import { BsCart2 } from "react-icons/bs";
 import { Title } from "../Global/Title";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { motion } from "framer-motion";
+import { ProductCart } from "../Global/ProductCart";
+import { AuthMainContext } from "../../context/MainContext";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
 
 export const Sidebar = ({ active, sidebar }: any) => {
   const modalRef = useRef<HTMLDivElement | null>(null);
@@ -23,6 +34,10 @@ export const Sidebar = ({ active, sidebar }: any) => {
       document.removeEventListener("mousedown", handleClick);
     };
   }, [active]);
+
+  const { currentSale, total } = useSelector(
+    (state: RootState) => state.product
+  );
 
   return (
     <ContainerModal>
@@ -43,11 +58,34 @@ export const Sidebar = ({ active, sidebar }: any) => {
             <CgClose />
           </button>
         </BoxClose>
-        <BoxProductEmpty>
-          <IoIosCloseCircleOutline />
-          <h3>SEU CARRINHO ESTÁ VAZIO</h3>
-          <button onClick={() => active(false)}>CONTINUAR COMPRANDO</button>
-        </BoxProductEmpty>
+        {currentSale.length === 0 ? (
+          <BoxProductEmpty>
+            <IoIosCloseCircleOutline />
+            <h3>SEU CARRINHO ESTÁ VAZIO</h3>
+            <button onClick={() => active(false)}>CONTINUAR COMPRANDO</button>
+          </BoxProductEmpty>
+        ) : (
+          <ContainerCart>
+            <BoxProduct>
+              {currentSale.map((product) => (
+                <ProductCart
+                  key={product.id}
+                  name={product.name}
+                  price={product.price}
+                  id={product.id}
+                  image={product.image}
+                  amount={product.amount}
+                />
+              ))}
+            </BoxProduct>
+            <div className="total">
+              <h5>TOTAL</h5>
+              <span>R$ {total.toFixed(2)}</span>
+            </div>
+            <button className="btn-buy">FINALIZAR COMPRA</button>
+            <button onClick={() => active(false)}>CONTINUAR COMPRANDO</button>
+          </ContainerCart>
+        )}
       </Container>
     </ContainerModal>
   );

@@ -18,6 +18,11 @@ export const BoxImage = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 32px;
+
+  > img {
+    width: 165px;
+    height: 165px;
+  }
 `;
 
 export const Name = styled.span`

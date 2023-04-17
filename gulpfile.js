@@ -21,7 +21,7 @@ gulp.task("iconfont", () => {
     .pipe(gulp.dest("dist/fonts"));
 });
 
-// Comprime as imagens.
+// Comprime as imagens em formato png.
 
 gulp.task("imagemin", () => {
   return gulp

@@ -3,10 +3,21 @@ export interface ISuplement {
   id: number;
 }
 
+export interface IProductNew {
+  name: string;
+  price: number;
+  id: number;
+  image: any;
+  amount?: number;
+}
+
 export interface IProduct {
   name: string;
-  price: string;
+  price: number;
   id: number;
+  image: any;
+  amount?: any;
+  item?: any;
 }
 
 export interface ITitle {

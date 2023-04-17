@@ -40,6 +40,9 @@ export const Releases = () => {
                 name={item.name}
                 id={item.id}
                 price={item.price}
+                image={item.image}
+                item={item}
+                amount={item.amount}
               />
             ))}
           </Slider>

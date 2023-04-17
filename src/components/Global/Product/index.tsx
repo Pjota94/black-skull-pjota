@@ -1,21 +1,24 @@
 import { BoxButtons, BoxImage, Container, Name, Price, Promo } from "./styles";
-import img from "../../../assets/Images/whey.svg";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
 import { IProduct } from "../../../interfaces";
+import { useDispatch } from "react-redux";
+import { addCart } from "../../../features/productSlice";
 
-export const Product = ({ id, name, price }: IProduct) => {
+export const Product = ({ name, price, image, item }: IProduct) => {
+  const dispatch = useDispatch();
+
   return (
     <>
       <BoxButtons>
         <div className="div-flex">
           <AiOutlineStar />
-          <BsCart2 />
+          <BsCart2 onClick={() => dispatch(addCart(item))} />
         </div>
       </BoxButtons>
       <Container>
         <BoxImage>
-          <img src={img} alt="whey" />
+          <img src={image} alt="whey" />
         </BoxImage>
         <Name>{name}</Name>
         <Price>R$ {price}</Price>

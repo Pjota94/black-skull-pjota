@@ -55,6 +55,97 @@ export const BoxClose = styled.div`
   }
 `;
 
+export const ContainerCart = styled.div`
+  .total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  h5 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 16px;
+    color: var(--black1);
+    margin-left: 20px;
+  }
+
+  span {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 16px;
+    color: var(--orange1);
+    margin-right: 20px;
+  }
+
+  .btn-buy {
+    border: none;
+    background: var(--orange1);
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 16px;
+    color: var(--black1);
+    height: 50px;
+    width: 360px;
+    transition: 0.4s;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .btn-buy:hover {
+    background: var(--orange2);
+  }
+
+  > button {
+    border: none;
+    background: var(--gray2);
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 16px;
+    color: var(--black1);
+    height: 50px;
+    width: 360px;
+    transition: 0.4s;
+    margin-left: 20px;
+  }
+
+  > button:hover {
+    background: var(--gray1);
+  }
+`;
+
+export const BoxProduct = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  overflow-y: scroll;
+  height: 303px;
+  flex-flow: wrap;
+  margin-top: 30px;
+  margin-right: 10px;
+
+  &&::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  &&::-webkit-scrollbar-thumb {
+    background: var(--orange1);
+  }
+
+  &&::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+`;
+
 export const BoxProductEmpty = styled.div`
   display: flex;
   flex-direction: column;
