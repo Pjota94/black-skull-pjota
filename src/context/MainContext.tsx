@@ -1,6 +1,5 @@
 import { createContext, useState } from "react";
 import { IProviderProps, IValueProps } from "../interfaces/context.interface";
-import { IProduct } from "../interfaces";
 
 export const AuthMainContext = createContext<IValueProps>({} as IValueProps);
 

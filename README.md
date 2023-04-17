@@ -1,6 +1,6 @@
 ## Resumo do Projeto
 
-O Objetivo desde projeto foi desenvolver um e-commerce seguindo um Figma proposto, além de criar a aplicaçãp seguindo o Figma, adicionei novas features, como Modal para Login, Sidebar para Carrinho de compras feito com Redux Toolkit para gerenciar os estados do carrinho, e um Menu de navegação com um DropBox. Também adicionei o Slick no projeto para fazer o carrosel de imagens e produtos.
+O Objetivo desde projeto foi desenvolver um e-commerce seguindo um Figma proposto, além de criar a aplicação seguindo o Figma, adicionei novas features, como Modal para Login, Sidebar para Carrinho de compras feito com Redux Toolkit para gerenciar os estados do carrinho, e um Menu de navegação com um DropBox. Também adicionei o Slick no projeto para fazer o carrosel de imagens e produtos.
 
 ## ⚙️ Features
 

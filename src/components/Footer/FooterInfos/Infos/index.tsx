@@ -7,7 +7,6 @@ export const Infos = ({ title, array }: IInfosTitle) => {
       <h4>{title}</h4>
       <BoxInfos>
         {array.map((item) => (
-          // <span key={item.id}>{item.description}</span>
           <a key={item.id} href="">
             {" "}
             {item.description}

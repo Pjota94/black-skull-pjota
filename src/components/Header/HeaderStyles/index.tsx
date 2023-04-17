@@ -4,7 +4,7 @@ import { Input } from "../../Global/Input";
 import { TbUserCircle } from "react-icons/tb";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Sidebar } from "../../SideBar";
 import { AnimatePresence } from "framer-motion";
 import { AuthMainContext } from "../../../context/MainContext";
