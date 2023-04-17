@@ -42,7 +42,6 @@ export const Releases = () => {
                 price={item.price}
                 image={item.image}
                 item={item}
-                amount={item.amount}
               />
             ))}
           </Slider>
